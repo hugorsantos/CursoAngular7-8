@@ -2,7 +2,7 @@ var mongoose = require("mongoose");
 var faker = require("faker");
 var PersonModel = require("../models/PersonModel");
 
-mongoose.connect('mongodb://localhost:27017/auth_test',
+mongoose.connect('mongodb://localhost:55000/auth_test',
     { useNewUrlParser: true });
 
 async function add(n) {

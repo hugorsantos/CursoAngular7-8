@@ -1,0 +1,44 @@
+COMANDOS PARA CRIAR UM PROJETO ANGULAR
+
+  CRIANDO O PROJETO
+  501  ng new productsapp
+
+  ACESSANDO A PASTA DO PROJETO
+  503  cd productsapp/
+
+  ADICIONANDO O ANGULAR MATERIAL
+  505  ng add @angular/material
+
+  INSTALANDO O FLEX LAYOUT
+  506  npm install --save @angular/flex-layout
+
+  CRIANDO UM COMPONENTE
+  508  ng g c Product -m app
+  509  ng g c Department -m app
+
+  CRIANDO UM SERVICO
+  510  ng g s service/Product
+  511  ng g s service/Department
+
+  CRIANDO UMA INTERFACE
+  512  ng g i service/Department
+  513  ng g i service/Product
+
+  COMANDO PARA REALIZAR A INSTALAÇÃO DE DEPENDÊNCIAS ANTIGAS.
+  npm install --legacy-peer-deps
+
+  ATUALIZANDO O PROJETO
+	Primeiro atualiza o angular
+	ng update --next @angular/cli --force
+
+	Antes de instalar o flex layout verifique se o projeto roda.
+	npm install --save @angular/flex-layout
+
+	Atualiza o Typescript
+	npm install typescript@latest
+
+	Rode o projeto caso de erro execute o comando abaixo
+	ERROR in The Angular Compiler requires TypeScript >=3.6.4 and <3.8.0 but 3.8.3 was found instead.
+	$ npm install typescript@3.7.5 --save
+
+	Rode novamente o projeto Angular.
