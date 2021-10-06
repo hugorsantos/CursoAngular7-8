@@ -11,7 +11,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:55000/auth_test',
+mongoose.connect('mongodb://localhost:32768/auth_test',
     { useNewUrlParser: true });
 
 app.use('/api', api);
